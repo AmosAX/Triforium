@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.triforium.HelloController">
+   <children>
+      <ImageView fx:id="background" fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../background.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1019.0">
+         <children>
+            <Button fx:id="startButton" layoutX="14.0" layoutY="729.0" mnemonicParsing="false" onAction="#startSimClick" prefHeight="25.0" prefWidth="132.0" text="Start the simulation" />
+            <Button layoutX="484.0" layoutY="729.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Add Miner" />
+            <Button layoutX="484.0" layoutY="665.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Add smith" />
+            <Button layoutX="484.0" layoutY="698.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Add Farmer" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
